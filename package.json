@@ -1,0 +1,48 @@
+{
+  "name": "botmaster-twitter",
+  "version": "1.0.0",
+  "description": "The integration of Twitter DM with Botmaster module",
+  "main": "lib/index.js",
+  "scripts": {
+    "s": "DEBUG=botmaster:* nodemon --legacy-watch ./example_jd.js",
+    "postversion": "git push && git push --tags && rm -rf build/temp",
+    "jsdoc": "jsdoc ./lib ./lib/bot_types"
+  },
+  "keywords": [
+    "bot",
+    "botmaster",
+    "twitter",
+    "twitter-dm",
+    "twitter-direct-messaging",
+    "bot-framework"
+  ],
+  "license": "MIT",
+  "author": "Abhishek Chotaliya <abhishekchotaliya.7@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhishekchotaliya/botmaster-twitter"
+  },
+  "bugs": {
+    "url": "https://github.com/abhishekchotaliya/botmaster-twitter/issues"
+  },
+  "dependencies": {
+    "botmaster": "^3.2.0",
+    "express": "^4.16.4",
+    "lodash": "^4.17.4",
+    "twit": "^2.2.11"
+  },
+  "engines": {
+    "node": "4.x.x || >=6.x.x"
+  },
+  "devDependencies": {
+    "botmaster-test-fixtures": "^2.1.0",
+    "eslint": "^3.17.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-ava": "^4.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "jsdoc": "^3.4.2",
+    "nodemon": "^1.11.0"
+  }
+}
